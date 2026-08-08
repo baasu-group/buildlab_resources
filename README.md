@@ -1,6 +1,16 @@
-# 🚀 Internship Engineering Program
+<div align="center">
 
-### Learn. Build. Collaborate. Ship.
+# 🚀 BuildLab Internship Engineering Program
+
+### Learn together. Build something real.
+
+BuildLab is a project-based learning environment where UI/UX, frontend, backend, and QA interns collaborate as one product team to turn ideas into working software.
+
+<a href="https://baasu-group.github.io/buildLab/"><strong>🌐 Explore the live BuildLab Resource Hub →</strong></a>
+
+</div>
+
+---
 
 Welcome to the official internship repository.
 
@@ -13,6 +23,19 @@ Instead of learning technologies in isolation, interns will work together to des
 The goal is simple:
 
 > **Learn the fundamentals, apply them to a real project, work like a professional engineering team, and leave the internship with experience you can confidently demonstrate.**
+
+## ✨ Explore BuildLab
+
+Visit the [BuildLab Resource Hub](https://baasu-group.github.io/buildLab/) to explore the learning paths, project guidance, tools, and references prepared for the program.
+
+The hub is designed to help you move from **learning** to **building**:
+
+- Follow a focused roadmap for your discipline.
+- Practice with documentation, exercises, and real-world tasks.
+- Collaborate across design, frontend, backend, and QA.
+- Apply what you learn to a shared product that can be demonstrated and improved.
+
+> **Start exploring:** [baasu-group.github.io/buildLab](https://baasu-group.github.io/buildLab/)
 
 ---
 
@@ -42,10 +65,10 @@ Interns will work in specialized tracks while collaborating as one product team.
 
 Each track has its own learning roadmap:
 
-- [`Frontend_Resources`](./buildlab/INT-026-08-01/Frontend_Resources)
-- [`Backend_resources`](./buildlab/INT-026-08-01/Backend_resources)
-- [`UI_UX_resources`](./buildlab/INT-026-08-01/UI_UX_resources)
-- [`QA_resources`](./buildlab/INT-026-08-01/QA_esources)
+- [`Frontend_Resources`](./INT-026-08-01/Frontend_Resources)
+- [`Backend_resources`](./INT-026-08-01/Backend_resources)
+- [`UI_UX_resources`](./INT-026-08-01/UI_UX_resources)
+- [`QA_resources`](./INT-026-08-01/QA_esources)
 
 ---
 
