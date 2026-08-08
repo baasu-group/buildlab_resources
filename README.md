@@ -174,9 +174,3 @@ The project is divided into four main disciplines.
 ```
 
 ---
-
-# 🌐 Internship website
-
-The static GitHub Pages site lives in [`buildlab/`](./buildlab/). The root [`index.html`](./index.html) redirects visitors there so the existing Pages URL continues working. Configure application, feedback, contact, community, and calendar links in [`buildlab/script.js`](./buildlab/script.js), then follow the [GitHub Pages setup guide](./docs/GITHUB_PAGES.md). Deployment is intentionally gated so only `basan-ta` or `baasu-group` can publish changes from `main`.
-
-The curriculum hub is data-driven: update [`buildlab/resources/data.js`](./buildlab/resources/data.js) to add topics, official documentation, YouTube videos, search links, and real-world practice tasks for Frontend, Backend, UI/UX, QA, DevOps, and AI/ML.
