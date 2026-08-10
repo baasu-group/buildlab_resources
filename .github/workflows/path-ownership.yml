@@ -1,0 +1,118 @@
+name: Enforce path ownership
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  path-ownership:
+    name: Check changed paths
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the pull request
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Enforce ownership policy
+        shell: bash
+        env:
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+
+          author="${PR_AUTHOR,,}"
+          owner="basan-ta"
+          failures=0
+
+          # These contributors may update shared project and case-study files.
+          intern_users="bivek09 parveshkhanal89-cmd rohitp-0224 sandip-1-1 code-himal tejas-gc madhukhanal arunrawal921-dotcom janaksaud1 resma2222 prashant-subedi tbd_member_12"
+
+          contains_user() {
+            local candidate="$1"
+            local allowed="$2"
+            for user in $allowed; do
+              if [[ "$candidate" == "$user" ]]; then
+                return 0
+              fi
+            done
+            return 1
+          }
+
+          mapfile -t changed_files < <(git diff --name-only "$BASE_SHA" "$HEAD_SHA")
+
+          for file in "${changed_files[@]}"; do
+            allowed=""
+
+            case "$file" in
+              buildLab_resources/*|.github/*|CONTRIBUTING.md|GITHUB_GOVERNANCE.md)
+                allowed="$owner"
+                ;;
+              buildLab_INT_1.0/PROGRAM_MANAGEMENT.md|buildLab_INT_1.0/TEAM_ROSTER_AND_ROTATION.md|buildLab_INT_1.0/WEEKLY_WORKPLAN.md|buildLab_INT_1.0/CASE_STUDY_GUIDE.md)
+                allowed="$owner"
+                ;;
+              buildLab_INT_1.0/Projects_INT_1.0/*|buildLab_INT_1.0/case_study_INT_1.0/*)
+                allowed="$intern_users $owner"
+                ;;
+              buildLab_INT_1.0/Frontend_INT_1.0/Bivek09/*)
+                allowed="bivek09 $owner"
+                ;;
+              buildLab_INT_1.0/Frontend_INT_1.0/parveshkhanal89-cmd/*)
+                allowed="parveshkhanal89-cmd $owner"
+                ;;
+              buildLab_INT_1.0/Frontend_INT_1.0/RohitP-0224/*)
+                allowed="rohitp-0224 $owner"
+                ;;
+              buildLab_INT_1.0/Backend_INT_1.0/Sandip-1-1/*)
+                allowed="sandip-1-1 $owner"
+                ;;
+              buildLab_INT_1.0/Backend_INT_1.0/code-himal/*)
+                allowed="code-himal $owner"
+                ;;
+              buildLab_INT_1.0/Backend_INT_1.0/tejas-gc/*)
+                allowed="tejas-gc $owner"
+                ;;
+              buildLab_INT_1.0/Backend_INT_1.0/madhukhanal/*)
+                allowed="madhukhanal $owner"
+                ;;
+              buildLab_INT_1.0/Backend_INT_1.0/arunrawal921-dotcom/*)
+                allowed="arunrawal921-dotcom $owner"
+                ;;
+              buildLab_INT_1.0/Backend_INT_1.0/prashant-subedi/*)
+                allowed="prashant-subedi $owner"
+                ;;
+              buildLab_INT_1.0/UI_UX_INT_1.0/janaksaud1/*)
+                allowed="janaksaud1 $owner"
+                ;;
+              buildLab_INT_1.0/UI_UX_INT_1.0/Resma2222/*)
+                allowed="resma2222 $owner"
+                ;;
+              buildLab_INT_1.0/DevOps_INT_1.0/TBD_MEMBER_12/*)
+                allowed="$owner"
+                ;;
+              *)
+                # Unowned paths remain available for normal team contribution.
+                continue
+                ;;
+            esac
+
+            if ! contains_user "$author" "$allowed"; then
+              echo "Unauthorized path: $file"
+              echo "Pull request author: $PR_AUTHOR"
+              echo "Allowed author(s): $allowed"
+              failures=$((failures + 1))
+            fi
+          done
+
+          if (( failures > 0 )); then
+            echo "Path ownership check failed. Ask basan-ta to make or review this change."
+            exit 1
+          fi
+
+          echo "Path ownership check passed."

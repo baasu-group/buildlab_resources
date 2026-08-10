@@ -1,0 +1,41 @@
+# BuildLab repository ownership
+#
+# CODEOWNERS controls required review on pull requests. The path-ownership
+# workflow also rejects pull requests whose author is not allowed for a path.
+# Keep this file owner-controlled.
+
+/.github/ @basan-ta
+/CONTRIBUTING.md @basan-ta
+/GITHUB_GOVERNANCE.md @basan-ta
+
+# Curriculum and learning resources: owner review is mandatory.
+/buildLab_resources/** @basan-ta
+
+# Program governance: owner review is mandatory.
+/buildLab_INT_1.0/PROGRAM_MANAGEMENT.md @basan-ta
+/buildLab_INT_1.0/TEAM_ROSTER_AND_ROTATION.md @basan-ta
+/buildLab_INT_1.0/WEEKLY_WORKPLAN.md @basan-ta
+/buildLab_INT_1.0/CASE_STUDY_GUIDE.md @basan-ta
+
+# Shared project and case-study artifacts may be prepared by interns,
+# but the repository owner reviews the final change.
+/buildLab_INT_1.0/Projects_INT_1.0/** @basan-ta
+/buildLab_INT_1.0/case_study_INT_1.0/** @basan-ta
+
+# Personal weekly workspaces: contributor or owner review.
+/buildLab_INT_1.0/Frontend_INT_1.0/Bivek09/** @Bivek09 @basan-ta
+/buildLab_INT_1.0/Frontend_INT_1.0/parveshkhanal89-cmd/** @parveshkhanal89-cmd @basan-ta
+/buildLab_INT_1.0/Frontend_INT_1.0/RohitP-0224/** @RohitP-0224 @basan-ta
+
+/buildLab_INT_1.0/Backend_INT_1.0/Sandip-1-1/** @Sandip-1-1 @basan-ta
+/buildLab_INT_1.0/Backend_INT_1.0/code-himal/** @code-himal @basan-ta
+/buildLab_INT_1.0/Backend_INT_1.0/tejas-gc/** @tejas-gc @basan-ta
+/buildLab_INT_1.0/Backend_INT_1.0/madhukhanal/** @madhukhanal @basan-ta
+/buildLab_INT_1.0/Backend_INT_1.0/arunrawal921-dotcom/** @arunrawal921-dotcom @basan-ta
+/buildLab_INT_1.0/Backend_INT_1.0/prashant-subedi/** @prashant-subedi @basan-ta
+
+/buildLab_INT_1.0/UI_UX_INT_1.0/janaksaud1/** @janaksaud1 @basan-ta
+/buildLab_INT_1.0/UI_UX_INT_1.0/Resma2222/** @Resma2222 @basan-ta
+
+# Temporary placeholder until the twelfth GitHub username is supplied.
+/buildLab_INT_1.0/DevOps_INT_1.0/TBD_MEMBER_12/** @basan-ta
