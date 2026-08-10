@@ -1,53 +1,73 @@
-# BuildLab Internship Engineering Program
+# BuildLab Learning Hub
 
-BuildLab is a six-month, project-based internship for a cross-functional product team. Interns learn by designing, building, testing, deploying, documenting, and presenting one shared product: the **Team Management Platform**.
+## Learn with courage. Grow with support. Build something meaningful.
 
-The program is designed for approximately **10–12 hours per week**. Each learner should spend roughly 30% of their time learning, 50% building, and 20% reviewing, documenting, and helping teammates.
+Welcome to the BuildLab resource hub—a place for people who want to pursue technology, believe in their potential, and grow through consistent practice.
 
-## Start here
+You may be a complete beginner, a career changer, a student, or someone who already knows the basics and wants a clear path forward. Wherever you begin, you do not have to figure everything out alone.
 
-- [Six-month program guide](./INTERNSHIP_GUIDE.md)
-- [Validated learning resources](./RESOURCE_CATALOG.md)
-- [Weekly progress template](./WEEKLY_PROGRESS_TEMPLATE.md)
+BuildLab provides learning guidance, practical exercises, mentorship, peer support, and a real product environment where knowledge becomes capability.
 
-## Skill tracks
+## What you can expect here
 
-| Track | Main responsibility | Guide |
-| --- | --- | --- |
-| UI/UX | Research, flows, interfaces, prototypes, design systems | [UI/UX resources](./UI_UX_resources/README.md) |
-| Frontend | Accessible, responsive product interface | [Frontend resources](./Frontend_Resources/README.md) |
-| Backend | Secure APIs, business rules, and data | [Backend resources](./Backend_resources/README.md) |
-| QA | Risk-based testing and release confidence | [QA resources](./QA_esources/README.md) |
-| DevOps | Collaboration, automation, CI/CD, observability | [DevOps resources](./DevOps_resources/README.md) |
-| Cloud | Deployable, secure, cost-aware infrastructure | [Cloud resources](./Cloud_Resources/README.md) |
-| AI/ML | Responsible AI features and data-informed decisions | [AI/ML resources](./AI/ML_resources/README.md) |
-| Pre-sales | Discovery, requirements, demos, proposals, and handoff | [Pre-sales resources](./Pre-Sales_resources/README.md) |
+- A clear six-month learning journey.
+- Beginner-friendly guidance with room to go deeper.
+- Curated documentation, roadmaps, and free learning resources.
+- Weekly practice connected to a real product.
+- Mentors who guide decisions, review work, and help remove blockers.
+- Teammates who learn with you and encourage your progress.
+- Honest feedback delivered with respect.
+- A portfolio of work that shows how you grew.
 
-## Shared product
+Our aim is not to create people who can only follow tutorials. Our aim is to help people become thoughtful, independent, collaborative builders.
 
-The Team Management Platform should progressively support:
+## A welcome to new members
 
-- Registration, login, logout, and protected sessions
-- User profiles, teams, roles, and permissions
-- Dashboard and task CRUD
-- Assignment, status, priority, search, filtering, and pagination
-- Notifications and useful empty/loading/error states
-- REST API documentation and automated tests
-- Responsive, accessible UI
-- CI checks, staging deployment, logs, monitoring, and a release runbook
+When you join BuildLab, you will receive:
 
-## How the program works
+1. An introduction to the product, team, tools, and learning path.
+2. A mentor or reviewer who helps you understand your first goal.
+3. A small first task so you can gain confidence quickly.
+4. Feedback on your work and a clear next step.
+5. A team that expects questions and makes space for learning.
 
-Every feature follows this loop:
+No question is too small when it helps you understand. Asking for help is part of professional growth, not a sign of weakness.
+
+## How to use this hub
 
 ```text
-Discover → Define → Design → Build → Test → Review → Deploy → Learn
+Choose a path → Learn one concept → Practice it → Apply it → Ask for feedback → Reflect → Continue
 ```
 
-Every week has a demonstrable outcome. Watching videos is preparation, not completion. Completion means that the intern can explain the concept, apply it to the shared product, show evidence, and respond to review feedback.
+Use one primary resource at a time. Do not measure your progress by the number of videos watched. Measure it by what you can explain, build, test, improve, and share with others.
 
-## Resource policy
+## Learning tracks
 
-The resource catalog was checked against current roadmap.sh pages, official documentation, YouTube channels/videos, and selected Udemy pages on **2026-08-10**. External platforms can change URLs, course availability, language, or pricing. Roadmap links and official documentation are the source of truth; videos are supplements; Udemy items are optional and must be checked for the **Free** label before enrollment.
+| Track | What you will grow in | Guide |
+| --- | --- | --- |
+| UI/UX | User-centered design, Figma, flows, systems, usability | [UI/UX resources](./UI_UX_resources/README.md) |
+| Frontend | Accessible and responsive product interfaces | [Frontend resources](./Frontend_Resources/README.md) |
+| Backend | APIs, data, authentication, business rules, security | [Backend resources](./Backend_resources/README.md) |
+| QA | Risk-based testing, API checks, automation, quality thinking | [QA resources](./QA_esources/README.md) |
+| DevOps | Delivery automation, CI/CD, reliability, observability | [DevOps resources](./DevOps_resources/README.md) |
+| Cloud | Infrastructure, deployment, security, and cost awareness | [Cloud resources](./Cloud_Resources/README.md) |
+| AI/ML | Responsible applied AI, data, evaluation, and experimentation | [AI/ML resources](./AI/ML_resources/README.md) |
+| Pre-sales | Discovery, requirements, demos, proposals, and handoff | [Pre-sales resources](./Pre-Sales_resources/README.md) |
 
-This folder is an internship curriculum and resource hub. It is not yet the application source code itself.
+## Six-month rhythm
+
+| Months | Growth focus |
+| --- | --- |
+| 1–2 | Learn foundations, understand the product, and build confidence |
+| 3–4 | Work with your team to build and validate real product features |
+| 5–6 | Improve reliability, prepare a release, document your decisions, and present your growth |
+
+Start with the [six-month internship guide](./INTERNSHIP_GUIDE.md), browse the [validated resource catalog](./RESOURCE_CATALOG.md), and use the [weekly progress template](./WEEKLY_PROGRESS_TEMPLATE.md) to make your learning visible.
+
+## Our promise
+
+BuildLab will not promise that the journey is always easy. We promise that the journey will be purposeful, that feedback will help you move forward, and that your growth will be respected.
+
+Learn at your pace, contribute with care, and help another person move one step forward when you can.
+
+> **Believe that you can grow. Begin where you are. Keep showing up. Build with us.**
