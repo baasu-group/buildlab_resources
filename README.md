@@ -65,10 +65,16 @@ Interns will work in specialized tracks while collaborating as one product team.
 
 Each track has its own learning roadmap:
 
-- [`Frontend_Resources`](./INT-026-08-01/Frontend_Resources)
-- [`Backend_resources`](./INT-026-08-01/Backend_resources)
-- [`UI_UX_resources`](./INT-026-08-01/UI_UX_resources)
-- [`QA_resources`](./INT-026-08-01/QA_esources)
+- [`Six-month internship guide`](./buildLab_resources/INTERNSHIP_GUIDE.md)
+- [`Validated resource catalog`](./buildLab_resources/RESOURCE_CATALOG.md)
+- [`Frontend_Resources`](./buildLab_resources/Frontend_Resources)
+- [`Backend_resources`](./buildLab_resources/Backend_resources)
+- [`UI_UX_resources`](./buildLab_resources/UI_UX_resources)
+- [`QA_resources`](./buildLab_resources/QA_esources)
+- [`DevOps_resources`](./buildLab_resources/DevOps_resources)
+- [`Cloud_Resources`](./buildLab_resources/Cloud_Resources)
+- [`AI/ML_resources`](./buildLab_resources/AI/ML_resources)
+- [`Pre-Sales_resources`](./buildLab_resources/Pre-Sales_resources)
 
 ---
 
@@ -107,7 +113,7 @@ The website includes a central resource hub for:
 - DevOps
 - AI/ML
 
-Each field can later contain roadmaps, documentation, practice assignments, tools, project guidance, and recommended references. Resource destinations are managed in [`buildlab/script.js`](./buildlab/script.js), so new links can be added without changing the page layout.
+Each field contains roadmaps, documentation, practice assignments, tools, project guidance, and recommended references. The current curriculum and validated external links are maintained in [`buildLab_resources`](./buildLab_resources/).
 
 ---
 
