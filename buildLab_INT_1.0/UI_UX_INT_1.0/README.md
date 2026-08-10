@@ -1,65 +1,20 @@
+# UI/UX INT 1.0 workspace
 
----
+This folder contains weekly evidence for the UI/UX track. The learning guidance is maintained in [buildLab_resources](../../buildLab_resources/UI_UX_resources/README.md).
 
-# `UI_UX_resources/README.md`
+## Contributors in the supplied roster
 
-```markdown
-# UI/UX Internship — Real-World Learning Roadmap
+janaksaud1, Resma2222
 
-Welcome to the UI/UX team.
+## Required folder structure
 
-Your job is not simply to make screens beautiful.
+Each GitHub username folder contains exactly 24 weekly folders:
 
-Your job is to solve user problems and create designs that developers can actually build.
+`UI_UX_INT_1.0/<github-username>/W-01/README.md` through `W-24/README.md`
 
----
+Every weekly file records the month, team, rotating role, learning evidence, product contribution, review evidence, blockers, and next action. Team membership is read from [TEAM_ROSTER_AND_ROTATION.md](../TEAM_ROSTER_AND_ROTATION.md).
 
-# 🎯 Main Project
+## Completion rule
 
-You will design the:
+Do not mark a week complete with only watched videos. Commit a reviewable artifact, link evidence, and write what changed in your understanding.
 
-# Team Management Platform
-
-The application will contain:
-
-- Login
-- Registration
-- Dashboard
-- Team
-- Tasks
-- User profile
-- Notifications
-- Forms
-
----
-
-# Phase 1 — Understand the Product
-
-Before opening Figma, understand:
-
-- Who is the user?
-- What problem are we solving?
-- What does the user need to accomplish?
-- What information do they need?
-- What actions can they perform?
-
-Write the user flow first.
-
----
-
-# Phase 2 — User Flow
-
-Example:
-
-```text
-Login
-  ↓
-Dashboard
-  ↓
-Tasks
-  ↓
-Task Details
-  ↓
-Edit Task
-  ↓
-Save
