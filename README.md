@@ -18,7 +18,7 @@ BuildLab exists for the person who wants to begin, improve, or change directionâ
 
 You do not need to know everything before you start. You need curiosity, consistency, and the courage to keep going when something feels difficult. We believe skills are developed through small steps, honest practice, thoughtful feedback, and the support of people who are learning alongside you.
 
-**Led by:** [basan-ta](https://github.com/basan-ta)
+**Founded and led by:** [basan-ta](https://github.com/basan-ta)
 
 Our goal is to help every learner move from:
 
