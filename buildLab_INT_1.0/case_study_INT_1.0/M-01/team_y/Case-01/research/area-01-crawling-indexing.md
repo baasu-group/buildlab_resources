@@ -13,6 +13,7 @@ PAGE PROCESSING
 INDEXING
    ↓
 SEARCH INDEX
+
 Research
 Why Google needs crawling
 How Google discovers webpages

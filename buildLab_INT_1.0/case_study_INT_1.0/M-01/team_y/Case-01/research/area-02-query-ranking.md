@@ -15,6 +15,7 @@ RANKING
 SELECT RESULTS
     ↓
 SEND RESULTS
+
 Research
 What happens when a user enters a query
 Query processing

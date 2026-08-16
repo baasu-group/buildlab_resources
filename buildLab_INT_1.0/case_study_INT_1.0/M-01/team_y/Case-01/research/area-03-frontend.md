@@ -17,6 +17,7 @@ RESULTS RECEIVED
 SEARCH RESULTS UI
  ↓
 USER INTERACTION
+
 Research
 Google Search interface
 Search box
