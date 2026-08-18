@@ -1,4 +1,4 @@
-## Area 2 — Query Processing & Ranking
+## Area 2 — Keywords & Query Processing
 
 Responsibility
 USER

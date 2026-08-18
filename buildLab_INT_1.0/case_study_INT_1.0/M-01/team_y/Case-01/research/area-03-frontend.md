@@ -1,4 +1,4 @@
-## Area 3 — Frontend & Search Experience
+## Area 3 — Retrieval & Ranking Algorithms
 
 Responsibility
 CANDIDATE DOCUMENTS
