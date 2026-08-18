@@ -1,0 +1,169 @@
+# Team Z - YouTube Recommendation System Case Study
+
+---
+
+# Team Roles
+
+## Team Lead :- Janak Saud
+
+ 
+
+1.  Delivery Owner: Janak Saud
+2. Quality & Documentation Owner: Sandip Sapkota, Prabesh Khanal
+
+# Problem Statement
+
+> **"Youtube has billions of videos. When a user wants certain videos to watch, without recommendation system, it fails to fulfill the pin point of the user. So, in 2008, Youtube launched its recommendation system which was further advanced as **user-based collaborative filtering."** **
+
+## Impact of YouTube Recommendation System
+
+**1. Impact on Users**
+
+* Personalized video recommendations
+* Faster content discovery
+* Better user experience
+* Increased engagement
+* Helps users discover new creators and topics
+
+**2. Impact on Database/Data**
+
+* Generates large amounts of user-behavior data
+* Stores watch history, likes, searches, and preferences
+* Helps build user-interest profiles
+* Requires scalable storage and data processing
+* Creates privacy and data-security requirements
+
+**3. Impact on Overall System**
+
+* Makes YouTube more personalized and useful
+* Requires scalable APIs, databases, and recommendation infrastructure
+* Helps creators reach relevant audiences
+* Creates a continuous feedback loop:
+
+```
+User Activity
+```
+
+     ↓
+
+Data Collection
+
+     ↓
+
+Recommendation
+
+     ↓
+
+User Interaction
+
+     ↓
+
+More Data
+
+     ↓
+
+Better Recommendation
+
+---
+
+# Technology Stack
+
+| Layer           | Technology            | Purpose                          |
+| --------------- | --------------------- | -------------------------------- |
+| UI/UX           | Figma                 | Interface design and prototyping |
+| Frontend        | React                 | User interface                   |
+| Programming     | JavaScript            | Frontend logic                   |
+| Backend         | Django                | Server-side application          |
+| API             | Django REST Framework | Frontend-backend communication   |
+| Database        | PostgreSQL            | Data storage                     |
+| Version Control | Git                   | Source-code management           |
+| Repository      | GitHub                | Collaboration and documentation  |
+
+---
+
+# Recommendation System
+
+### Candidate Generation
+
+The system identifies potentially relevant videos based on:
+
+* Watched categories
+* Previously watched videos
+* User preferences
+* Similar video categories
+* Popular videos
+
+### Ranking
+
+Candidate videos receive a score based on simplified factors such as:
+
+```
+Recommendation Score =
+Category Similarity
++ User Interest
++ Watch History Similarity
++ Popularity
+```
+
+The highest-ranked videos are returned to the user.
+
+---
+
+# New User / Cold Start
+
+A new user has  no historical data.
+
+The system can initially use:
+
+* Popular videos
+* Trending videos
+* Category selection
+* General user preferences
+
+---
+
+# 15. System Flow
+
+```
+User opens application
+        ↓
+React requests recommendations
+        ↓
+Django receives API request
+        ↓
+Identify user
+        ↓
+Retrieve user history/preferences
+        ↓
+Generate candidate videos
+        ↓
+Calculate recommendation scores
+        ↓
+Rank videos
+        ↓
+Return top recommendations
+        ↓
+React displays videos
+        ↓
+User watches/interacts
+        ↓
+Interaction sent to backend
+        ↓
+Database updated
+        ↓
+Future recommendations improve
+```
+
+---
+
+# &#x20;Research Sources
+
+* https://support.google.com/youtube/answer/16089387?hl=en
+* https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf
+* https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/
+* Official technical documentation
+* https://medium.com/@zentrinozen/how-youtubes-recommendation-algorithm-actually-works-the-complete-breakdown-for-creators-6b395be74db2
+* https://www.youtube.com/watch?v=URI5GsOBznk
+
+---
+
