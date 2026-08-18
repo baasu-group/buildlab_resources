@@ -1,46 +1,50 @@
 ## Area 2 — Query Processing & Ranking
 
-Responsibility begins after the user submits a search query.
-
-USER QUERY
-    ↓
-QUERY PROCESSING
-    ↓
-UNDERSTANDING QUERY
-    ↓
-SEARCH / RETRIEVAL
-    ↓
-RANKING
-    ↓
-SELECT RESULTS
-    ↓
-SEND RESULTS
-
+Responsibility
+USER
+  ↓
+SEARCH QUERY
+  ↓
+KEYWORD EXTRACTION / PROCESSING
+  ↓
+QUERY UNDERSTANDING
+  ↓
+QUERY MATCHING
+  ↓
+CANDIDATE DOCUMENTS
 Research
-What happens when a user enters a query
-Query processing
+What is a keyword?
+Keywords vs search queries
+How search engines process text
+Tokenization
+Normalization
+Stop words
+Stemming
+Lemmatization
+Spelling correction
+Synonyms and related terms
+Keyword extraction
+Query expansion
 Understanding search intent
-Matching query with indexed information
+Natural-language queries
+How Google interprets queries
+Matching query terms with indexed content
+Inverted-index lookup
 Information retrieval
-Candidate results
-Ranking
-Relevance
-Ranking signals/concepts
-Spam considerations
-Search result generation
-Backend APIs/request flow concept
-Performance
+Candidate generation
+Algorithms used in information retrieval
+Data structures used for search
+Search efficiency
 Scalability
-Reliability
-Caching
-Architecture
+Performance
+Architecture of this section
 Engineering decisions
-Alternatives
+Alternative approaches
 Impact/result
 Lessons learned
+Main Question
 
-Main reasearch question
-How does Google turn a user's search query into relevant results from its index?
+How does Google transform a user's search query and keywords into a form that can be efficiently matched against its enormous search index?
 
 > Assigned to: Arun Rawal
 
