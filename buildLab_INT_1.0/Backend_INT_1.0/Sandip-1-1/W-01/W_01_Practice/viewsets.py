@@ -13,7 +13,7 @@ class TodoViewSet(viewsets.ModelViewSet):
             user=self.request.user
         ).order_by('-created_at')
 
-    def perform_create(self,serializer):
+    def perform_create(self,serializer):    #creating the posts i.e updating forms etc
         serializer.save(user=self.request.user)
 
     def get_permissions(self):
@@ -22,7 +22,7 @@ class TodoViewSet(viewsets.ModelViewSet):
         return [permissions.IsAuthenticated()]
 
     @action(detail=False,methods=['get'])
-    def completed(self,request):
+    def completed(self,request):        #custom api call except simple ones
         todos=self.get_queryset().filter(completed=True)
         serializer= self.get_serializer(todos,many=True)
         return Response(serializer.data)
