@@ -1,47 +1,50 @@
-## Area 3 — Frontend & Search Experience
+## Area 3 — Retrieval & Ranking Algorithms
 
-Responsibility begins with the user.
-
-USER
- ↓
-GOOGLE SEARCH PAGE
- ↓
-SEARCH BOX
- ↓
-ENTER QUERY
- ↓
-REQUEST
- ↓
-RESULTS RECEIVED
- ↓
-SEARCH RESULTS UI
- ↓
-USER INTERACTION
-
+Responsibility
+CANDIDATE DOCUMENTS
+        ↓
+RELEVANCE EVALUATION
+        ↓
+RANKING SIGNALS
+        ↓
+RANKING ALGORITHMS
+        ↓
+ORDERED RESULTS
+        ↓
+SEARCH RESULTS
 Research
-Google Search interface
-Search box
-Search interaction
-Query submission
-Frontend → backend communication
-Request/response concept
-Search results page
-Result cards
-Links
-Images/video/news results where relevant
-Responsive design
-Accessibility
+What is information retrieval?
+Candidate retrieval
+How relevant documents are selected
+Relevance scoring
+Ranking problem
+PageRank
+Link analysis
+Graph algorithms
+Ranking signals
+Content relevance
+Quality signals
+Freshness
+Location/context where publicly documented
+Spam detection
+Machine-learning-based ranking
+Learning-to-rank concepts
+How multiple signals can influence ranking
+Historical Google ranking algorithms/systems
+Modern Google ranking systems that are publicly documented
+Ranking efficiency
+Distributed ranking
+Scalability
 Performance
-User experience
-Error/loading states
-Interface evolution where relevant
-Frontend architecture
+Architecture of this section
+Algorithms/data structures
 Engineering decisions
-Alternatives
+Alternative approaches
 Impact/result
 Lessons learned
-Main reasearch question
-How does Google provide a fast, usable interface that allows users to interact with the search system and understand its results?
+Main Question
+
+How does Google retrieve potentially relevant pages and use algorithms and ranking signals to determine which results should appear first?
 
 > Assigned to: Ganesh saud
 
