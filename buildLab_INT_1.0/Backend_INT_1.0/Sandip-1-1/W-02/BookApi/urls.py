@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.urls import path,include
 from Book import viewsets
 
-router=DefaultRouter
+router=DefaultRouter()
 router.register('books',viewsets.BookViewSet,basename='book')
 
 urlpatterns = [
