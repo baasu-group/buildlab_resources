@@ -99,7 +99,7 @@ The team divided the search engine architecture into three specialized, intercon
 
 **Screenshot or demo:**  
 End-to-End System Flow:  
-`Web Content` -> `URL Frontier Queue` -> `Googlebot Fetch (2MB Limit)` -> `Two-Wave Render` -> `SimHash Deduplication` -> `Inverted Index Shards (Bigtable)` -> `Query Tokenization & Synonym Expansion` -> `Scatter-Gather Candidate Retrieval` -> `PageRank & ML Re-Ranking` -> `Final SERP`
+![Google Search Algorithm Diagram](google_search_algorithm.drawio.svg) 
 
 **Measurement or acceptance results:**
 * **End-to-End Latency:** Sub-200ms query processing time across billions of indexed web pages.
