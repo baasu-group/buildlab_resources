@@ -5,9 +5,9 @@
 
 ## Contributors and roles
 
-**Team Lead:** Bibek Pant  
-**Delivery Owner:** Bibek Pant  
-**Quality & Documentation Owner:** Himal Shrestha and Prashant Subedi  
+**Team Lead:** Rohit Pandey  
+**Delivery Owner:** Rohit Pandey 
+**Quality & Documentation Owner:** Tejas GC, Srijana Bohara  
 
 ---
 
