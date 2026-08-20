@@ -3,8 +3,8 @@ from django.contrib.auth.models import User
 
 class Book(models.Model):
     title=models.CharField(max_length=200)
-    author=models.CharField()
-    genre=models.CharField()
+    author=models.CharField(max_length=200)
+    genre=models.CharField(max_length=300)
     published_year=models.IntegerField()
     user=models.ForeignKey(
         User,

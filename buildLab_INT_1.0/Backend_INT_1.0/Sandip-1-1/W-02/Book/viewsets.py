@@ -23,7 +23,11 @@ class BookViewSet(viewsets.ModelViewSet):
 
     @action(detail=False,methods=['get'])
     def by_genre(self,request):
-        books=self.get_queryset().filter(genre='fiction')
+        genre= request.query_params.get('genre',None)
+        if genre:
+            books=self.get_queryset().filter(genre=genre)
+        else:
+            books=self.get_queryset()
         serializer=self.get_serializer(books,many=True)
         return Response(serializer.data)
     
