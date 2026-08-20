@@ -19,7 +19,7 @@ class BookViewSet(viewsets.ModelViewSet):
     def get_permissions(self):
         if self.action == 'list':
             return [permissions.IsAuthenticated()]
-        return [permissions.IsAuthenticated]
+        return [permissions.IsAuthenticated()]
 
     @action(detail=False,methods=['get'])
     def by_genre(self,request):
