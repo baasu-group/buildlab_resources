@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Book",
+    "Student",
     "rest_framework",
     "rest_framework.authtoken"
 ]
