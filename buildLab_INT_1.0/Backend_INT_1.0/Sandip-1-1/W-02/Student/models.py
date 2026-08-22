@@ -20,7 +20,8 @@ class Student(models.Model):
 class Grade(models.Model):
     student=models.ForeignKey(
         'Student',
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        related_name='grades'
     )
     subject=models.CharField(max_length=150)
     score=models.FloatField(
