@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from django.db.models import Sum, Count
 from .serializers import CategorySerializer, ExpenseSerializer
 from .models import Category, Expense
+from datetime import datetime
 
 class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class= CategorySerializer
@@ -30,14 +31,14 @@ class ExpenseViewSet(viewsets.ModelViewSet):
     def total(self,request):
         total_expense=self.get_queryset().aggregate(total_amount=Sum('amount'))
         return Response({
-            "Total": total_expense['total_amount']
+            "Total": total_expense['total_amount'] or 0
         })
 
     @action(detail=False, methods=['get'])
     def by_category(self,request):
         category=request.query_params.get('category',None)
         if category:
-            expenses=self.get_queryset().filter(category=category)
+            expenses=self.get_queryset().filter(category__name=category)
         else:
             expenses=self.get_queryset()
         serializer=self.get_serializer(expenses,many=True)
@@ -45,8 +46,12 @@ class ExpenseViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'])
     def this_month(self,request):
-        filter=request.query_params.get('month',None)
-        expenses=self.get_queryset().filter(expense_date__month=filter)
+        month=request.query_params.get('month',None)
+        if month:
+            expenses=self.get_queryset().filter(expense_date__month=month)
+        else:
+            current_month=datetime.now().month
+            expenses=self.get_queryset().filter(expense_date__month=current_month)
         serializer=self.get_serializer(expenses,many=True)
         return Response(serializer.data)
 
