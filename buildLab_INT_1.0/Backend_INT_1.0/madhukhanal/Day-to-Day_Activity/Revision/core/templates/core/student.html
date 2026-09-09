@@ -1,0 +1,10 @@
+<!DOCTYPE .html>
+<html>
+    <head><title>Home Page</title></head>
+    <body>
+        <h1>Students:</h1>
+        {% for x in students %}
+        {{forloop.counter}}. {{x}} 
+        {% endfor %}
+    </body>
+</html>
