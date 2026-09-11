@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import *
+from .forms import BookForm
 # Create your views here.
 
 
@@ -39,3 +40,22 @@ def book(request):
         "book": Book.objects.all()
     }
     return render(request, "core/book.html",data)
+
+#Form FUnction
+
+def add_book(request):
+    if request.method=="POST":
+        form = BookForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            return redirect("/books")
+
+    else:
+        form=BookForm()
+
+    data = {
+            "form":form
+        }
+
+    return render(request,"core/add_book.html",data)
