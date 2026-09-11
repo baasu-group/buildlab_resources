@@ -1,12 +1,9 @@
-<!DOCTYPE .html>
-<html>
-    <head><title>Home Page</title></head>
-    <body>
+{% extends "core/base.html" %}
+{% block content %}
         <h1>subjects:</h1>
         <ul>
         {% for x in subject %}
         <li>{{x}} </li>
         {% endfor %}
         </ul>
-    </body>
-</html>
+{% endblock %}

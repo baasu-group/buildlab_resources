@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import *
 # Create your views here.
 
 
@@ -26,10 +26,16 @@ def about(request):
     return HttpResponse("Hello this is about page.")
 
 def contact(request):
-    return HttpResponse("Contact Me <br> email:123@gmail.com")
+    return render(request, "core/contact.html")
 
 def student(request):
     data = {
-        "students": ["ram","sita","hari","sunny"]
+        "students": Student.objects.all()
     }
     return render(request, "core/student.html", data)
+
+def book(request):
+    data = {
+        "book": Book.objects.all()
+    }
+    return render(request, "core/book.html",data)

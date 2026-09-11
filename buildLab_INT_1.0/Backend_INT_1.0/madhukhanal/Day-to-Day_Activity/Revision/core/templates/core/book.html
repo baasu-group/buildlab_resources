@@ -1,0 +1,10 @@
+{% extends "core/base.html" %}
+{%block content%}
+<h1>Book</h1>
+{%for x in book%}
+{{forloop.counter}}.
+{{x.title}}-
+{{x.author}}-
+{{x.price}}
+{%endfor%}
+{% endblock %}

@@ -1,15 +1,11 @@
-<!DOCTYPE .html>
-<html>
-    <head><title>Home Page</title></head>
-    <body>
-        <h1>Profile</h1>
+{% extends "core/base.html" %}
+{% block content %}
+<h1>Profile</h1>
         <p>Name: {{name}} <br> age:{{age}}<br> course: {{course}}</p>
         {%if is_student%}
             <p>I am a Student</p>
         {%else%}
             <p>I am not a Student</p>
         {% endif %}
-
-
-    </body>
-</html>
+{% endblock  %}
+        

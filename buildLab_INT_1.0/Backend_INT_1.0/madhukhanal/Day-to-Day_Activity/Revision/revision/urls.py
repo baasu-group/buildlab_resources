@@ -26,4 +26,5 @@ urlpatterns = [
     path('profile/', profile),
     path('subject/', subject),
     path('student/', student),
+    path('book/',book)
 ]
